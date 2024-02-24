@@ -1,0 +1,122 @@
+.ball1{
+    margin-top: 200px;
+margin: 0 auto;
+    width: 700px;
+    height: 700px;
+    background-color: yellow;
+
+    display: flex;
+}
+.eyes{
+ 
+    width: 700px;
+
+    flex-direction: column;
+}
+.clot1{
+    padding-top: 200px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.clot2{
+
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.eye1{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border: 20px solid black;
+    animation: infinite;
+    animation-name: eye1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+.eye2{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border: 20px solid black;
+    animation: infinite;
+    animation-name: eye2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+ 
+}
+.rot{
+    margin-top: 200px;
+    width: 490px;
+    height: 70px;
+    background-color: blue;
+    border: 20px solid black;
+    animation: infinite;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rot{
+    20%{
+        transform: none;
+        
+    }
+    70%{
+            width: 50%;
+    }
+
+    100%{
+        transform: none;
+    }
+}
+@keyframes eye1{
+    33%{
+        transform: translate(0);
+    }
+    66%{
+        transform: translateX(20px);
+    }
+    90%{
+        transform: none;
+        transform: translateX(-20px);
+
+    }
+    
+    95%{
+
+        transform: scaleY(0);
+    }
+    
+    100%{
+        transform: scaleY(1);
+    }
+}
+@keyframes eye2{
+    33%{
+        transform: translate(0);
+    }
+    66%{
+        transform: translateX(20px);
+    }
+    90%{
+        transform: none;
+        transform: translateX(-20px);
+
+    }
+    
+    95%{
+        
+        transform: scaleY(0);
+    }
+    
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+
